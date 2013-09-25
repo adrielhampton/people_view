@@ -73,7 +73,7 @@ $client->setAccessToken($token);
 
 // refreshing the client token is manual e.g. given the same params from above:
 $newTokenResponse = $client->getAccessToken($accessTokenUrl, 'authorization_code', $params);
-$client->setAccessToken($newTokenResponse['result]['access_token']);
+$client->setAccessToken($newTokenResponse['result']['access_token']);
 ?>
 ```
 
