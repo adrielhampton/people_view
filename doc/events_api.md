@@ -138,7 +138,15 @@ POST /api/v1/sites/:site_slug/pages/events
 
 ### Parameters
 
-* page parameters
+* The standard page parameters -
+    * slug - where the page will live on the website - an event with slug 'party' will live at `http://{domain}/party`
+    * status - `drafted` or `published`
+    * name - a name for the page
+    * headline - the headline of the page
+    * title - the title of the page
+    * excerpt - excerpt of the content to show on search engine results
+    * author_id - id of the author of the page
+    * external_id - id of the page from another tool
 * calendar_id - id of the calendar on which this event should appear
 * intro - introductory information about the event
 * start_at - starting time of the event
