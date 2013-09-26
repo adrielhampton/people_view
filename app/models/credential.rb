@@ -16,10 +16,10 @@ class Credential < ActiveRecord::Base
   private
 
   def update_from_token(token)
-    update_attributes!(token: token.token, refresh_token: token.refresh_token)
+    update_attributes!(token: token.token)
   end
 
   def build_access_token
-    OAuth2::AccessToken.new(client, token, refresh_token: refresh_token)
+    OAuth2::AccessToken.new(client, token)
   end
 end
