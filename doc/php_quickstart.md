@@ -74,7 +74,6 @@ The client is now ready to make resource requests
 ```php
 <?php
 $baseApiUrl = 'https://foobar.nationbuilder.com';
-$client->setAccessToken($token);
 $response = $client->fetch($baseApiUrl . '/api/v1/people');
 print_r($response);
 ?>
