@@ -7,7 +7,7 @@ Use this endpoint to list the events stored in the nation
 
 GET /api/v1/sites/:site_slug/pages/events
 
-### Attributes
+### Parameters
 * page - page number
 * per_page - number of results to show per page
 * tags - tags present on events returned
@@ -137,44 +137,7 @@ Use this endpoint to create an event
 POST /api/v1/sites/:site_slug/pages/events
 
 ### Parameters
-
-* The standard page parameters -
-    * slug - where the page will live on the website - an event with slug 'party' will live at `http://{domain}/party`
-    * status - `drafted` or `published`
-    * name - a name for the page
-    * headline - the headline of the page
-    * title - the title of the page
-    * excerpt - excerpt of the content to show on search engine results
-    * author_id - id of the author of the page
-    * external_id - id of the page from another tool
-* calendar_id - id of the calendar on which this event should appear
-* intro - introductory information about the event
-* start_at - starting time of the event
-* end_at - ending time of the event
-* contact - details about the point of contact for the event
-    * person_id - id of the contact
-    * contact_phone - the contact's phone number for the purposes of the event
-    * show_phone - whether to publically show that phone number
-    * contact_email - the contact's email address for the purposes of the event
-    * show_email - whether to publically show that email address
-* rsvp_form - details about the form users will fill out to (optional, leave out and the event will not accept RSVPs)
-    * phone - whether to show the phone input field on the RSVP form.  Possible values are "optional", "required", "hidden"
-    * address - whether to show the address input field on the RSVP form.  Possible values are "optional", "required", "hidden"
-    * allow_guests - whether to allow the RSVPing person to bring more guests.  Provide true or false.
-    * gather_volunteers - whether to ask people if they wish to volunteer on the RSVP form. Provide true or false. Not available for Enterprise and Small Business editions.
-* show_guests - whether to show the guest list publically
-* capacity - maximum event attendees
-* venue - details about the location of the event
-    * name - name of the venue (Staples Center, for example)
-    * address - address information
-* autoresponse - the details of the email to send to a person after they RSVP (optional, leave off to not send RSVP confirmation email)
-    * broadcaster_id - id of the broadcaster on whose behalf the response will be sent
-    * subject - subject line of autoresponse email
-    * body - body of the autoresponse email
-* shifts - an array of shifts to offer for volunteering on the RSVP form.  Each shift definition has these attributes:
-    * goal - the goal amount of volunteers to gather for the event shift
-    * start_time - starting time of the shift
-    * end_time - ending time of the shift
+* `event` - the event resource you wish to create
 
 ### Example
 
