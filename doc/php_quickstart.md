@@ -51,31 +51,23 @@ Someone with access to the Nation's resources will have to visit that url in a b
 http://foobar.nationbuilder.com/?code=123456abcdef
 ```
 
-Use the code to generate an access token:
+Use the code to set the client's access token:
 
 ```php
 <?php
 $code = '123456abcdef';
 
+// generate a token response
 $accessTokenUrl = 'https://foobar.nationbuilder.com/oauth/token';
 $params = array('code' => $code, 'redirect_uri' => $redirectUrl);
 $response = $client->getAccessToken($accessTokenUrl, 'authorization_code', $params);
 
+// set the client token
 $token = $response['result']['access_token'];
-?>
-```
-
-Set the client's token
-
-```php
-<?php
 $client->setAccessToken($token);
-
-// refreshing the client token is manual e.g. given the same params from above:
-$newTokenResponse = $client->getAccessToken($accessTokenUrl, 'authorization_code', $params);
-$client->setAccessToken($newTokenResponse['result']['access_token']);
 ?>
 ```
+
 
 The client is now ready to make resource requests
 
