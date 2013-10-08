@@ -9,7 +9,7 @@ Index Endpoint
 View a paginated list of contacts made to a person
 GET /api/v1/people/:id/contacts
 
-### Attributes
+### Parameters
     * page - (optional) page number
     * per_page - (optional) number of results to show per page (max 100; default 10)
 
@@ -46,14 +46,9 @@ Create Endpoint
 Create a record of a contact in NationBuilder
 POST /api/v1/people/:id/contacts
 
-### Attributes
+### Parameters
 
-    * sender_id - ID of the person who made the contact
-    * broadcaster_id - (optional) ID of the broadcaster on whose behalf the sender made the contact
-    * status - (optional) How the contact went (tk link)
-    * method - The method through which the contact was made (tk link)
-    * type_id - The ID of the contact type.  Get this via use of the Contact Types (tk link) endpoints
-    * note - (optional) note about the content of the contact
+* `contact` - resource describing the contact you want to create
 
 ### Example
 
