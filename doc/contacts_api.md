@@ -219,7 +219,7 @@ The destroy endpoint removes a contact type from the nation
 DELETE /api/v1/settings/contact_types/:id
 
 Contact Methods API
-===================
+-------------------
 This API lists the possible methods of contact
 
 GET /api/v1/settings/contact_methods
@@ -302,7 +302,7 @@ GET https://foobar.nationbuilder.com/api/v1/settings/contact_methods
 ```
 
 Contact Statuses API
-===================
+--------------------
 This API lists the possible contact status categories
 
 GET /api/v1/settings/contact_statuses
