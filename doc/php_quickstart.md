@@ -45,10 +45,10 @@ The above will output:
 https://foobar.nationbuilder.com/oauth/authorize?response_type=code&client_id=yourClientId&redirect_uri=http%3A%2F%2Fwww.myapp.com%2Foauth_callback
 ```
 
-Someone with access to the Nation's resources will have to visit that url in a browser, accept the application and retrive the authorization code form the page url. That page url will look something like:
+Someone with access to the Nation's resources will have to visit that url in a browser, accept the application and be redirected back to your redirect uri with an authorization code. The request you receive will look like this:
 
 ```
-http://foobar.nationbuilder.com/?code=123456abcdef
+GET http://yourapp.example.com/oauth_callback?code=123456abcdef
 ```
 
 Use the code to set the client's access token:
