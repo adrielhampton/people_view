@@ -259,7 +259,6 @@ Should get a response like this if the person exists:
 Search Endpoint
 ---------------
 Search for people with non-unique traits of their first and last names, and their primary address city and state.
-A maximum of 20 people will be returned.
 
 GET /api/v1/people/search
 
@@ -273,6 +272,8 @@ GET /api/v1/people/search
 * `updated_since` - people updated since the given date
 * `with_mobile` - only people with mobile phone numbers
 * `custom_values` - match custom field values (takes a nested format, e.g. custom_values[my_field_slug]=abcd)
+* `page` - page number (default 1)
+* `per_page` - number of results to show per page (default 10, max 100)
 
 ### Example
 
