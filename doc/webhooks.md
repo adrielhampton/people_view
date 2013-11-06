@@ -19,7 +19,7 @@ In order to determine whether to trust a request your server receives, you can a
 Subnations
 ----------
 
-Nations with subnations can register webhooks for events that happen in their subnations.  These requests will be accompanied by the webhook token belonging to the parent nation.
+Nations with subnations can register webhooks that will be triggered only by events that happen in their subnations.  These requests will be accompanied by the webhook token belonging to the parent nation.
 
 Samples
 -------
