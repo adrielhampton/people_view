@@ -3,11 +3,9 @@ API Authentication Quick-Start Guide
 
 These are the steps necessary to start using the API:
 
-Note: The API is currently in open beta, feel free to experiment with it.  Changes can and will happen before version 1 is considered stable.
-
 1. Register the application
 
-    Log into your nation, navigate to Settings > Apps > New App. Register your application with a name and redirect URI. After you register, make sure to record the UID and Secret codes provided here for future use.  For the time being applications are only available to their registered nation.
+    Log into your nation, navigate to Settings > Apps > New App. Register your application with a name and redirect URI. After you register, make sure to record the UID and Secret codes provided here for future use.
 
 2. Ask a nation's administrator for access
 
