@@ -13,6 +13,7 @@ GET /api/v1/sites/:site_slug/pages/events
 * tags - tags present on events returned
 * starting - earliest start time for events returned (inclusive)
 * until - latest end time for events returned (exclusive)
+* calendar_id - the id of the calendar from which events should be scoped
 
 ### Example
 
