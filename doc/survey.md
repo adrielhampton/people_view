@@ -143,6 +143,7 @@ POST https://foobar.nationbuilder.com/api/v1/sites/foobar/pages/surveys
   "survey": {
     "slug": "survey",
     "name": "Survey",
+    "tags": ["funny"],
     "questions": [{
       "prompt": "What issue is more important to you?",
       "external_id": null,
@@ -184,6 +185,7 @@ You will receive a response of status code 200 and a body like this:
     "excerpt": null,
     "author_id": null,
     "external_id": null,
+    "tags": ["funny"],
     "questions": [
       {
         "id": 9,
@@ -238,6 +240,7 @@ PUT https://foobar.nationbuilder.com/api/v1/sites/foobar/pages/surveys/5
     "slug": "survey",
     "site_slug": "foobar",
     "name": "Survey",
+    "tags": ["funny"],
     "questions": [{
       "prompt": "Are you a political junkie?",
       "type": "yes_no",
@@ -290,6 +293,7 @@ You will get a response with code 200 like this:
     "excerpt": null,
     "author_id": null,
     "external_id": null,
+    "tags": ["funny"],
     "questions": [
       {
         "id": 10,

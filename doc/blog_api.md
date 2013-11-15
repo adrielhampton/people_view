@@ -38,6 +38,7 @@ Then you should get a 200 response with a body like this:
       "excerpt": null,
       "author_id": 5,
       "external_id": "34598732345",
+      "tags": ["funny"],
       "id": 10
     },
     {
@@ -50,6 +51,7 @@ Then you should get a 200 response with a body like this:
       "excerpt": null,
       "author_id": 5,
       "external_id": null,
+      "tags": ["healthy"],
       "id": 11
     }
   ]
@@ -81,6 +83,7 @@ Then you should get a 200 response with a body like this:
     "excerpt": null,
     "author_id": 5,
     "external_id": "34598732345",
+    "tags": ["funny"],
     "id": 10
   }
 }
@@ -101,6 +104,7 @@ POST /api/v1/sites/:site_slug/pages/blogs
     * headline - Heading on the page (optional, defaults to the name)
     * excerpt - meta attribute for SEO - description (optional)
     * external_id - the unique identifier for this resource in an external service (optional)
+    * tags - list of tags (optional)
 
 ### Example
 
@@ -133,6 +137,7 @@ You should get a 200 response with a body like this:
     "excerpt": null,
     "author_id": null,
     "external_id": null,
+    "tags": ["funny"],
     "id": 12
   }
 }
@@ -183,6 +188,7 @@ That should update the page to have the new title, and return a response code of
     "excerpt": null,
     "author_id": null,
     "external_id": null,
+    "tags": ["funny"],
     "id": 12
   }
 }

@@ -40,6 +40,7 @@ GET https://foobar.nationbuilder.com/api/v1/sites/foobar/pages/events?starting=2
       "author_id": 65,
       "published_at": "2013-05-07T14:14:07-07:00",
       "external_id": null,
+      "tags": ["funny"],
       "intro": "",
       "calendar_id": 1,
       "contact": {
@@ -96,6 +97,7 @@ GET https://foobar.nationbuilder.com/api/v1/sites/foobar/pages/events?starting=2
       "author_id": 9,
       "published_at": "2013-02-28T20:43:36-08:00",
       "external_id": null,
+      "tags": [],
       "intro": null,
       "calendar_id": null,
       "contact": {
@@ -213,6 +215,7 @@ GET https://foobar.nationbuilder.com/api/v1/sites/foobar/pages/events/1
     "author_id": 1,
     "published_at": null,
     "external_id": null,
+    "tags": ["funny"],
     "intro": null,
     "calendar_id": 1,
     "contact": {

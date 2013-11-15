@@ -38,6 +38,7 @@ Then you should get a 200 response with a body like this:
       "excerpt": null,
       "author_id": 5,
       "external_id": null,
+      "tags": ["funny"],
       "published_at": "2012-12-07T11:24:00-08:00",
       "id": 10,
       "content_before_flip": "<p>Psychopathy is more common than you would expect</p>"
@@ -52,6 +53,7 @@ Then you should get a 200 response with a body like this:
       "excerpt": null,
       "author_id": 5,
       "external_id": null,
+      "tags": ["smart"],
       "published_at": "2013-04-25T10:47:06-07:00",
       "id": 11,
       "content_before_flip": "<p>Some people just don't see eye to eye</p>"
@@ -113,6 +115,7 @@ Then you should get a 200 response with a body like this:
     "content_before_flip": "<p>Some people just don't see eye to eye</p>",
     "content_after_flip": "<p>Lorem ipsum dolor sit amet</p>",
     "external_id": nil,
+    "tags": ["funny"],
     "published_at": "2013-04-25T10:47:06-07:00"
   }
 }
@@ -134,6 +137,7 @@ POST /api/v1/sites/:site_slug/pages/blogs/:blog_id/posts
     * headline - Heading on the page (optional, defaults to the name)
     * excerpt - meta attribute for SEO - description (optional)
     * external_id - the unique identifier for this resource in an external service (optional)
+    * tags - list of tags (optional)
     * published_at - when the blog was published (optional)
     * content_before_flip - the content of the blog post to be shown on the posts index, typically used as teaser content.  Put the entire blog post content into this field to have it.  (one form of content is required). Content is sanitized before persistence.
     * content_after_flip - content of the blog post to be shown only on the full post page.  The full post page combines the content_before_flip to the content_after_flip
@@ -155,7 +159,7 @@ With a body like this:
     "status": "published",
     "content_before_flip": "<p>You will never guess what is after the flip</p>",
     "content_after_flip": "<p>The answer is words. Words were after the flip.</p>",
-    "tags": "funny,true",
+    "tags": ["funny", "true"],
     "published_at": "2013-04-25T10:47:06-07:00"
   }
 }
@@ -174,11 +178,12 @@ You should get a 200 response with a body like this:
     "excerpt": null,
     "author_id": null,
     "external_id": null,
+    "tags": ["funny"],
     "published_at": "2013-04-25T10:47:06-07:00",
     "id": 16,
     "content_before_flip": "<p>You will never guess what is after the flip</p>",
     "content_after_flip": "<p>The answer is words. Words were after the flip.</p>",
-    "tags": "funny,true"
+    "tags": ["funny", "true"]
   }
 }
 ```
@@ -209,7 +214,7 @@ With a body like this:
     "excerpt": null,
     "content_before_flip": "new content",
     "content_after_flip": "same old content",
-    "tags": null,
+    "tags": ["funny"],
     "published_at": "2013-04-25T10:47:06-07:00"
   }
 }
@@ -229,11 +234,11 @@ That should update the page to have the new title, and return a response code of
     "excerpt": null,
     "author_id": null,
     "external_id": null,
+    "tags": ["funny"],
     "published_at": "2013-04-25T10:47:06-07:00",
     "id": 12,
     "content_before_flip": "new content",
     "content_after_flip": "same old content",
-    "tags": null
   }
 }
 ```

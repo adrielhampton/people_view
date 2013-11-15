@@ -38,6 +38,7 @@ Then you should get a 200 response with a body like this:
       "excerpt": null,
       "author_id": null,
       "external_id": null,
+      "tags": ["funny"],
       "id": 10,
       "content": "<p>This is where you tell everyone about Foobar Softwares.</p>"
     },
@@ -51,6 +52,7 @@ Then you should get a 200 response with a body like this:
       "excerpt": "asdf",
       "author_id": null,
       "external_id": null,
+      "tags": ["funny"],
       "id": 11,
       "content": "<p>afadsfds</p>"
     }
@@ -73,6 +75,7 @@ POST /api/v1/sites/:site_slug/pages/basic_pages
     * headline - Heading on the page (optional, defaults to the name)
     * excerpt - meta attribute for SEO - description (optional)
     * external_id - the unique identifier for this resource in an external service (optional)
+    * tags - list of tags (optional)
 
 ### Example
 

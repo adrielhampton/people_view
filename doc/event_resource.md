@@ -22,3 +22,4 @@
 | venue        | optional      |                                      | The details about the location of the event                                                                  |
 | autoresponse | optional      |                                      | The details of the email to send to a person after they RSVP (leave out to not send RSVP confirmation email) |
 | shifts       | optional      |                                      | shifts to display on the RSVP form                                                                           |
+| tags         | optional      | ["funny", "true"]                    | slist of tags                                                                                                |
