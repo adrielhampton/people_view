@@ -56,6 +56,7 @@ GET https://foobar.nationbuilder.com/api/v1/sites/foobar/pages/events?starting=2
         "phone": "hidden",
         "address": "hidden",
         "allow_guests": true,
+        "accept_rsvps": true,
         "gather_volunteers": false
       },
       "capacity": 15,
@@ -113,6 +114,7 @@ GET https://foobar.nationbuilder.com/api/v1/sites/foobar/pages/events?starting=2
         "phone": "hidden",
         "address": "hidden",
         "allow_guests": true,
+        "accept_rsvps": true,
         "gather_volunteers": false
       },
       "capacity": 0,
@@ -168,6 +170,7 @@ POST https://foobar.nationbuilder.com/api/v1/sites/foobar/pages/events
       "phone": "optional",
       "address": "required",
       "allow_guests": true,
+      "accept_rsvps": true,
       "gather_volunteers": true
     },
     "show_guests": true,
@@ -231,6 +234,7 @@ GET https://foobar.nationbuilder.com/api/v1/sites/foobar/pages/events/1
       "phone": "hidden",
       "address": "hidden",
       "allow_guests": true,
+      "accept_rsvps": true,
       "gather_volunteers": false
     },
     "capacity": 0,
