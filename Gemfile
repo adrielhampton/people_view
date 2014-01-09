@@ -24,3 +24,4 @@ gem "formtastic-plus-bootstrap"
 gem "coderay"
 gem "carrierwave"
 gem 'ace-rails-ap', :git => "git://github.com/codykrieger/ace-rails-ap.git"
+gem 'nokogiri'
