@@ -4,7 +4,7 @@ Create and run imports into your nation with this API.
 
 Create Endpoint
 ---------------
-Use this endpoint to start an import into your nation.
+Use this endpoint to start an import into your nation. File size for each import must be 50mb or less.
 
 ```
 POST /api/v1/imports
