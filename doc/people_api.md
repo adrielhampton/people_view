@@ -505,7 +505,7 @@ You will receive a response of status 201 and body response like this:
 
 Push Endpoint
 -------------
-Updates person matched, or creates if no match is found.  Matches are found exclusively by email address.
+Updates person matched, or creates if no match is found.  Matches are found exclusively by email address or external ID.
 
 ```
 PUT /api/v1/people/push
